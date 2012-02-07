@@ -17,14 +17,6 @@
                                 <rect key="frame" x="0.0" y="110" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="wball.png" id="7Fe-vP-2Gd">
-                                <rect key="frame" x="320" y="110" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="yball.png" id="NoP-sC-zm7">
-                                <rect key="frame" x="400" y="110" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="wball.png" id="jk7-Lc-j55">
                                 <rect key="frame" x="80" y="110" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -35,6 +27,14 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="wball.png" id="2Zo-hM-jI8">
                                 <rect key="frame" x="240" y="110" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="wball.png" id="7Fe-vP-2Gd">
+                                <rect key="frame" x="320" y="110" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="yball.png" id="NoP-sC-zm7">
+                                <rect key="frame" x="400" y="110" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="8lX-7f-zlj">
@@ -100,27 +100,63 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap to get your lottery picks" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="gAc-kD-Atm">
+                                <rect key="frame" x="0.0" y="139" width="480" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.012090406469969657" green="0.0" blue="0.33338994565217395" alpha="1" colorSpace="calibratedRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <connections>
+                        <outlet property="ball1ImageView" destination="TJt-cI-ea0" id="buF-Dr-kh5"/>
                         <outlet property="ball1Label" destination="8lX-7f-zlj" id="G8F-lO-frM"/>
+                        <outlet property="ball2ImageView" destination="jk7-Lc-j55" id="LMX-7o-4hg"/>
                         <outlet property="ball2Label" destination="Uv7-lu-Zro" id="5pv-uq-kqo"/>
+                        <outlet property="ball3ImageView" destination="h6b-SQ-SIN" id="vLc-bt-FzA"/>
                         <outlet property="ball3Label" destination="25t-QR-Me8" id="IJ2-Mo-fFC"/>
+                        <outlet property="ball4ImageView" destination="2Zo-hM-jI8" id="dSb-Sn-7DL"/>
                         <outlet property="ball4Label" destination="UIi-sB-4xT" id="3cV-Bl-BYH"/>
+                        <outlet property="ball5ImageView" destination="7Fe-vP-2Gd" id="oEw-1g-WbO"/>
                         <outlet property="ball5Label" destination="ska-A3-Khc" id="uKt-K1-s56"/>
+                        <outlet property="directionLabel" destination="gAc-kD-Atm" id="cWh-um-a8S"/>
+                        <outlet property="megaballImageView" destination="NoP-sC-zm7" id="aEs-hD-wN3"/>
                         <outlet property="megaballLabel" destination="euX-Xb-Pda" id="fce-pt-pvK"/>
+                        <outlet property="titleLabel" destination="ysC-r0-jCU" id="I1R-Jr-V6K"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="7" y="185"/>
+            <point key="canvasLocation" x="14" y="309"/>
         </scene>
     </scenes>
     <resources>
         <image name="wball.png" width="80" height="80"/>
         <image name="yball.png" width="80" height="80"/>
     </resources>
+    <classes>
+        <class className="RJSViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RJSViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ball1ImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ball1Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ball2ImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ball2Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ball3ImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ball3Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ball4ImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ball4Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ball5ImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ball5Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="directionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="megaballImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="megaballLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
