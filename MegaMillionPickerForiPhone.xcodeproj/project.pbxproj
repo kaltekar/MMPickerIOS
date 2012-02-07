@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84BFEF5A14E0C3B200A3139B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BFEF5914E0C3B200A3139B /* UIKit.framework */; };
+		84BFEF5C14E0C3B200A3139B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BFEF5B14E0C3B200A3139B /* Foundation.framework */; };
+		84BFEF5E14E0C3B200A3139B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BFEF5D14E0C3B200A3139B /* CoreGraphics.framework */; };
+		84BFEF6414E0C3B200A3139B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84BFEF6214E0C3B200A3139B /* InfoPlist.strings */; };
+		84BFEF6614E0C3B200A3139B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BFEF6514E0C3B200A3139B /* main.m */; };
+		84BFEF6A14E0C3B200A3139B /* RJSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BFEF6914E0C3B200A3139B /* RJSAppDelegate.m */; };
+		84BFEF6D14E0C3B200A3139B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BFEF6B14E0C3B200A3139B /* MainStoryboard.storyboard */; };
+		84BFEF7014E0C3B200A3139B /* RJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BFEF6F14E0C3B200A3139B /* RJSViewController.m */; };
+		84BFEF7C14E0C52500A3139B /* wball.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BFEF7A14E0C52500A3139B /* wball.png */; };
+		84BFEF7D14E0C52500A3139B /* yball.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BFEF7B14E0C52500A3139B /* yball.png */; };
+		84BFEF8414E0CA9B00A3139B /* SCLotteryEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BFEF8014E0CA9B00A3139B /* SCLotteryEngine.m */; };
+		84BFEF8514E0CA9B00A3139B /* SCParseLottoryResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BFEF8314E0CA9B00A3139B /* SCParseLottoryResults.m */; };
+		84BFEF8B14E0CE2200A3139B /* SCMMResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BFEF8A14E0CE2200A3139B /* SCMMResult.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84BFEF5514E0C3B100A3139B /* MegaMillionPickerForiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaMillionPickerForiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BFEF5914E0C3B200A3139B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84BFEF5B14E0C3B200A3139B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84BFEF5D14E0C3B200A3139B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84BFEF6114E0C3B200A3139B /* MegaMillionPickerForiPhone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MegaMillionPickerForiPhone-Info.plist"; sourceTree = "<group>"; };
+		84BFEF6314E0C3B200A3139B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84BFEF6514E0C3B200A3139B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84BFEF6714E0C3B200A3139B /* MegaMillionPickerForiPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MegaMillionPickerForiPhone-Prefix.pch"; sourceTree = "<group>"; };
+		84BFEF6814E0C3B200A3139B /* RJSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJSAppDelegate.h; sourceTree = "<group>"; };
+		84BFEF6914E0C3B200A3139B /* RJSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJSAppDelegate.m; sourceTree = "<group>"; };
+		84BFEF6C14E0C3B200A3139B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		84BFEF6E14E0C3B200A3139B /* RJSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJSViewController.h; sourceTree = "<group>"; };
+		84BFEF6F14E0C3B200A3139B /* RJSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJSViewController.m; sourceTree = "<group>"; };
+		84BFEF7A14E0C52500A3139B /* wball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wball.png; sourceTree = "<group>"; };
+		84BFEF7B14E0C52500A3139B /* yball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yball.png; sourceTree = "<group>"; };
+		84BFEF7F14E0CA9B00A3139B /* SCLotteryEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLotteryEngine.h; sourceTree = "<group>"; };
+		84BFEF8014E0CA9B00A3139B /* SCLotteryEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLotteryEngine.m; sourceTree = "<group>"; };
+		84BFEF8114E0CA9B00A3139B /* SCMMResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMMResult.h; sourceTree = "<group>"; };
+		84BFEF8214E0CA9B00A3139B /* SCParseLottoryResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCParseLottoryResults.h; sourceTree = "<group>"; };
+		84BFEF8314E0CA9B00A3139B /* SCParseLottoryResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCParseLottoryResults.m; sourceTree = "<group>"; };
+		84BFEF8A14E0CE2200A3139B /* SCMMResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMMResult.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84BFEF5214E0C3B100A3139B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BFEF5A14E0C3B200A3139B /* UIKit.framework in Frameworks */,
+				84BFEF5C14E0C3B200A3139B /* Foundation.framework in Frameworks */,
+				84BFEF5E14E0C3B200A3139B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84BFEF4A14E0C3B100A3139B = {
+			isa = PBXGroup;
+			children = (
+				84BFEF5F14E0C3B200A3139B /* MegaMillionPickerForiPhone */,
+				84BFEF5814E0C3B100A3139B /* Frameworks */,
+				84BFEF5614E0C3B100A3139B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84BFEF5614E0C3B100A3139B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84BFEF5514E0C3B100A3139B /* MegaMillionPickerForiPhone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84BFEF5814E0C3B100A3139B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84BFEF5914E0C3B200A3139B /* UIKit.framework */,
+				84BFEF5B14E0C3B200A3139B /* Foundation.framework */,
+				84BFEF5D14E0C3B200A3139B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84BFEF5F14E0C3B200A3139B /* MegaMillionPickerForiPhone */ = {
+			isa = PBXGroup;
+			children = (
+				84BFEF6814E0C3B200A3139B /* RJSAppDelegate.h */,
+				84BFEF6914E0C3B200A3139B /* RJSAppDelegate.m */,
+				84BFEF6B14E0C3B200A3139B /* MainStoryboard.storyboard */,
+				84BFEF6E14E0C3B200A3139B /* RJSViewController.h */,
+				84BFEF6F14E0C3B200A3139B /* RJSViewController.m */,
+				84BFEF7F14E0CA9B00A3139B /* SCLotteryEngine.h */,
+				84BFEF8014E0CA9B00A3139B /* SCLotteryEngine.m */,
+				84BFEF8A14E0CE2200A3139B /* SCMMResult.m */,
+				84BFEF8114E0CA9B00A3139B /* SCMMResult.h */,
+				84BFEF8214E0CA9B00A3139B /* SCParseLottoryResults.h */,
+				84BFEF8314E0CA9B00A3139B /* SCParseLottoryResults.m */,
+				84BFEF6014E0C3B200A3139B /* Supporting Files */,
+			);
+			path = MegaMillionPickerForiPhone;
+			sourceTree = "<group>";
+		};
+		84BFEF6014E0C3B200A3139B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84BFEF7A14E0C52500A3139B /* wball.png */,
+				84BFEF7B14E0C52500A3139B /* yball.png */,
+				84BFEF6114E0C3B200A3139B /* MegaMillionPickerForiPhone-Info.plist */,
+				84BFEF6214E0C3B200A3139B /* InfoPlist.strings */,
+				84BFEF6514E0C3B200A3139B /* main.m */,
+				84BFEF6714E0C3B200A3139B /* MegaMillionPickerForiPhone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84BFEF5414E0C3B100A3139B /* MegaMillionPickerForiPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BFEF7314E0C3B200A3139B /* Build configuration list for PBXNativeTarget "MegaMillionPickerForiPhone" */;
+			buildPhases = (
+				84BFEF5114E0C3B100A3139B /* Sources */,
+				84BFEF5214E0C3B100A3139B /* Frameworks */,
+				84BFEF5314E0C3B100A3139B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MegaMillionPickerForiPhone;
+			productName = MegaMillionPickerForiPhone;
+			productReference = 84BFEF5514E0C3B100A3139B /* MegaMillionPickerForiPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84BFEF4C14E0C3B100A3139B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 84BFEF4F14E0C3B100A3139B /* Build configuration list for PBXProject "MegaMillionPickerForiPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84BFEF4A14E0C3B100A3139B;
+			productRefGroup = 84BFEF5614E0C3B100A3139B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84BFEF5414E0C3B100A3139B /* MegaMillionPickerForiPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84BFEF5314E0C3B100A3139B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BFEF6414E0C3B200A3139B /* InfoPlist.strings in Resources */,
+				84BFEF6D14E0C3B200A3139B /* MainStoryboard.storyboard in Resources */,
+				84BFEF7C14E0C52500A3139B /* wball.png in Resources */,
+				84BFEF7D14E0C52500A3139B /* yball.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84BFEF5114E0C3B100A3139B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BFEF6614E0C3B200A3139B /* main.m in Sources */,
+				84BFEF6A14E0C3B200A3139B /* RJSAppDelegate.m in Sources */,
+				84BFEF7014E0C3B200A3139B /* RJSViewController.m in Sources */,
+				84BFEF8414E0CA9B00A3139B /* SCLotteryEngine.m in Sources */,
+				84BFEF8514E0CA9B00A3139B /* SCParseLottoryResults.m in Sources */,
+				84BFEF8B14E0CE2200A3139B /* SCMMResult.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84BFEF6214E0C3B200A3139B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BFEF6314E0C3B200A3139B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84BFEF6B14E0C3B200A3139B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BFEF6C14E0C3B200A3139B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84BFEF7114E0C3B200A3139B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84BFEF7214E0C3B200A3139B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84BFEF7414E0C3B200A3139B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MegaMillionPickerForiPhone/MegaMillionPickerForiPhone-Prefix.pch";
+				INFOPLIST_FILE = "MegaMillionPickerForiPhone/MegaMillionPickerForiPhone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84BFEF7514E0C3B200A3139B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MegaMillionPickerForiPhone/MegaMillionPickerForiPhone-Prefix.pch";
+				INFOPLIST_FILE = "MegaMillionPickerForiPhone/MegaMillionPickerForiPhone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84BFEF4F14E0C3B100A3139B /* Build configuration list for PBXProject "MegaMillionPickerForiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BFEF7114E0C3B200A3139B /* Debug */,
+				84BFEF7214E0C3B200A3139B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BFEF7314E0C3B200A3139B /* Build configuration list for PBXNativeTarget "MegaMillionPickerForiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BFEF7414E0C3B200A3139B /* Debug */,
+				84BFEF7514E0C3B200A3139B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84BFEF4C14E0C3B100A3139B /* Project object */;
+}
