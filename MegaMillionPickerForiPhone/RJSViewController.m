@@ -39,16 +39,50 @@
 @synthesize isStartup = _isStartup;
 
 - (void)fadeBallsIn {
-//    self.ball1Label.center
-//    self.ball2Label.center
-//    self.ball3Label.center
-//    self.ball4Label.center
-//    self.ball5Label.center
-//    self.megaballLabel.center
+
+    NSArray *array = [NSArray arrayWithObjects:self.ball1View,self.ball2View,self.ball3View,self.ball4View,self.ball5View,self.megaballView, nil];
+    [UIView animateWithDuration:1.0 animations:^{
+        for (SCBallView *ball in array) {
+            CGPoint point = ball.center;
+            point.y = 150;
+            ball.center = point;
+            ball.alpha = 1.0f;
+        }
+
+    }];
 }
 
 - (void)fadeBallsOut {
     
+    NSArray *array = [NSArray arrayWithObjects:self.ball1View,self.ball2View,self.ball3View,self.ball4View,self.ball5View,self.megaballView, nil];
+    [UIView animateWithDuration:5.0 animations:^{
+        for (SCBallView *ball in array) {
+            CGPoint point = ball.center;
+            point.y = 0.0f;
+            ball.center = point;
+            ball.alpha = 0.0f;
+        }
+        
+//    } completion:^(BOOL finished) {
+//        if (finished) {
+//            for (SCBallView *ball in array) {
+//                CGPoint point = ball.center;
+//                point.y = BALL_FRAME_ORIGIN_Y;
+//                ball.center = point;
+//                ball.alpha = 1.0f;
+//            }
+//        }
+}];
+    
+    [UIView animateWithDuration:0.0f animations:^{
+        for (SCBallView *ball in array) {
+            CGPoint point = ball.center;
+            point.y = 0.0f;
+            ball.center = point;
+            ball.alpha = 0.0f;
+        }
+        
+    }];
 }
 
 - (void) getPicks:(UITapGestureRecognizer *)recognizer {
@@ -66,7 +100,8 @@
     self.ball4View.numberLabel.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:3]];
     self.ball5View.numberLabel.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:4]];
     self.megaballView.numberLabel.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:5]];
-    
+    [NSTimer timerWithTimeInterval:2.0f target:self selector:@selector(fadeBallsIn) userInfo:nil repeats:NO];
+    [self fadeBallsIn];
 }
 
 - (void)didReceiveMemoryWarning
@@ -121,6 +156,13 @@
     self.ball5View = [[SCBallView alloc] initWithFrame:frame5];
     self.megaballView = [[SCBallView alloc] initWithFrame:frame6];
     self.megaballView.isMegaball = YES;
+    
+    self.ball1View.alpha = 01.0;
+    self.ball2View.alpha = 01.0;
+    self.ball3View.alpha = 01.0;
+    self.ball4View.alpha = 01.0;
+    self.ball5View.alpha = 01.0;
+    self.megaballView.alpha = 0.0;
  
     [self.view addSubview:self.ball1View];
     [self.view addSubview:self.ball2View];
