@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0013CDB614EB47CB00D5A76C /* SCBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0013CDB514EB47CB00D5A76C /* SCBallView.m */; };
+		0013CDB914EB650C00D5A76C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0013CDB814EB650C00D5A76C /* QuartzCore.framework */; };
 		84BFEF5A14E0C3B200A3139B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BFEF5914E0C3B200A3139B /* UIKit.framework */; };
 		84BFEF5C14E0C3B200A3139B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BFEF5B14E0C3B200A3139B /* Foundation.framework */; };
 		84BFEF5E14E0C3B200A3139B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BFEF5D14E0C3B200A3139B /* CoreGraphics.framework */; };
@@ -23,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0013CDB414EB47CB00D5A76C /* SCBallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBallView.h; sourceTree = "<group>"; };
+		0013CDB514EB47CB00D5A76C /* SCBallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBallView.m; sourceTree = "<group>"; };
+		0013CDB814EB650C00D5A76C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		84BFEF5514E0C3B100A3139B /* MegaMillionPickerForiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaMillionPickerForiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BFEF5914E0C3B200A3139B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84BFEF5B14E0C3B200A3139B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0013CDB914EB650C00D5A76C /* QuartzCore.framework in Frameworks */,
 				84BFEF5A14E0C3B200A3139B /* UIKit.framework in Frameworks */,
 				84BFEF5C14E0C3B200A3139B /* Foundation.framework in Frameworks */,
 				84BFEF5E14E0C3B200A3139B /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +86,7 @@
 		84BFEF5814E0C3B100A3139B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0013CDB814EB650C00D5A76C /* QuartzCore.framework */,
 				84BFEF5914E0C3B200A3139B /* UIKit.framework */,
 				84BFEF5B14E0C3B200A3139B /* Foundation.framework */,
 				84BFEF5D14E0C3B200A3139B /* CoreGraphics.framework */,
@@ -102,6 +109,8 @@
 				84BFEF8214E0CA9B00A3139B /* SCParseLottoryResults.h */,
 				84BFEF8314E0CA9B00A3139B /* SCParseLottoryResults.m */,
 				84BFEF6014E0C3B200A3139B /* Supporting Files */,
+				0013CDB414EB47CB00D5A76C /* SCBallView.h */,
+				0013CDB514EB47CB00D5A76C /* SCBallView.m */,
 			);
 			path = MegaMillionPickerForiPhone;
 			sourceTree = "<group>";
@@ -189,6 +198,7 @@
 				84BFEF8414E0CA9B00A3139B /* SCLotteryEngine.m in Sources */,
 				84BFEF8514E0CA9B00A3139B /* SCParseLottoryResults.m in Sources */,
 				84BFEF8B14E0CE2200A3139B /* SCMMResult.m in Sources */,
+				0013CDB614EB47CB00D5A76C /* SCBallView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,26 +8,48 @@
 
 #import "RJSViewController.h"
 #import "SCLotteryEngine.h"
+#import "SCBallView.h"
+#import <QuartzCore/QuartzCore.h>
+
+
+#define BALL1_FRAME_ORIGIN_X 0
+#define BALL2_FRAME_ORIGIN_X 80
+#define BALL3_FRAME_ORIGIN_X 160
+#define BALL4_FRAME_ORIGIN_X 240
+#define BALL5_FRAME_ORIGIN_X 320
+#define BALL6_FRAME_ORIGIN_X 400
+
+#define BALL_FRAME_ORIGIN_Y 110
+#define BALL_FRAME_HEIGHT 80
+#define BALL_FRAME_WIDTH 80
 
 @implementation RJSViewController
 
-@synthesize ball1Label;
-@synthesize ball2Label;
-@synthesize ball3Label;
-@synthesize ball4Label;
-@synthesize ball5Label;
-@synthesize megaballLabel;
+
 @synthesize titleLabel;
 @synthesize directionLabel;
-@synthesize ball1ImageView;
-@synthesize ball2ImageView;
-@synthesize ball3ImageView;
-@synthesize ball4ImageView;
-@synthesize ball5ImageView;
-@synthesize megaballImageView;
+@synthesize ball1View;
+@synthesize ball2View;
+@synthesize ball3View;
+@synthesize ball4View;
+@synthesize ball5View;
+@synthesize megaballView;
 
 @synthesize lottoEngine = _lottoEngine;
 @synthesize isStartup = _isStartup;
+
+- (void)fadeBallsIn {
+//    self.ball1Label.center
+//    self.ball2Label.center
+//    self.ball3Label.center
+//    self.ball4Label.center
+//    self.ball5Label.center
+//    self.megaballLabel.center
+}
+
+- (void)fadeBallsOut {
+    
+}
 
 - (void) getPicks:(UITapGestureRecognizer *)recognizer {
     
@@ -35,27 +57,15 @@
     
     if (self.isStartup) {
         self.titleLabel.hidden = NO;
-        self.ball1Label.hidden = NO;
-        self.ball2Label.hidden = NO;
-        self.ball3Label.hidden = NO;
-        self.ball4Label.hidden = NO;
-        self.ball5Label.hidden = NO;
-        self.megaballLabel.hidden = NO;
         self.directionLabel.hidden = YES;
-        self.ball1ImageView.hidden = NO;
-        self.ball2ImageView.hidden = NO;
-        self.ball3ImageView.hidden = NO;
-        self.ball4ImageView.hidden = NO;
-        self.ball5ImageView.hidden = NO;
-        self.megaballImageView.hidden = NO;
     }
     
-    self.ball1Label.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
-    self.ball2Label.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:1]];
-    self.ball3Label.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:2]];
-    self.ball4Label.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:3]];
-    self.ball5Label.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:4]];
-    self.megaballLabel.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:5]];
+    self.ball1View.numberLabel.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
+    self.ball2View.numberLabel.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:1]];
+    self.ball3View.numberLabel.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:2]];
+    self.ball4View.numberLabel.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:3]];
+    self.ball5View.numberLabel.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:4]];
+    self.megaballView.numberLabel.text = [NSString stringWithFormat:@"%@",[array objectAtIndex:5]];
     
 }
 
@@ -83,6 +93,7 @@
 }
 
 
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -91,47 +102,39 @@
 	
     _lottoEngine = [[SCLotteryEngine alloc] init];
     
-    
-    
     UITapGestureRecognizer *gr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(getPicks:)];
     [self.view addGestureRecognizer:gr];
     
-
-    self.titleLabel.hidden = YES;
-    self.ball1Label.hidden = YES;
-    self.ball2Label.hidden = YES;
-    self.ball3Label.hidden = YES;
-    self.ball4Label.hidden = YES;
-    self.ball5Label.hidden = YES;
-    self.megaballLabel.hidden = YES;
-    self.directionLabel.hidden = NO;
-    self.ball1ImageView.hidden = YES;
-    self.ball2ImageView.hidden = YES;
-    self.ball3ImageView.hidden = YES;
-    self.ball4ImageView.hidden = YES;
-    self.ball5ImageView.hidden = YES;
-    self.megaballImageView.hidden = YES;
-
     self.isStartup = YES; 
     
+    CGRect frame1 = CGRectMake(BALL1_FRAME_ORIGIN_X, BALL_FRAME_ORIGIN_Y, BALL_FRAME_WIDTH, BALL_FRAME_HEIGHT);
+    CGRect frame2 = CGRectMake(BALL2_FRAME_ORIGIN_X, BALL_FRAME_ORIGIN_Y, BALL_FRAME_WIDTH, BALL_FRAME_HEIGHT);
+    CGRect frame3 = CGRectMake(BALL3_FRAME_ORIGIN_X, BALL_FRAME_ORIGIN_Y, BALL_FRAME_WIDTH, BALL_FRAME_HEIGHT);
+    CGRect frame4 = CGRectMake(BALL4_FRAME_ORIGIN_X, BALL_FRAME_ORIGIN_Y, BALL_FRAME_WIDTH, BALL_FRAME_HEIGHT);
+    CGRect frame5 = CGRectMake(BALL5_FRAME_ORIGIN_X, BALL_FRAME_ORIGIN_Y, BALL_FRAME_WIDTH, BALL_FRAME_HEIGHT);
+    CGRect frame6 = CGRectMake(BALL6_FRAME_ORIGIN_X, BALL_FRAME_ORIGIN_Y, BALL_FRAME_WIDTH, BALL_FRAME_HEIGHT);
+    
+    self.ball1View = [[SCBallView alloc] initWithFrame:frame1];
+    self.ball2View = [[SCBallView alloc] initWithFrame:frame2];
+    self.ball3View = [[SCBallView alloc] initWithFrame:frame3];
+    self.ball4View = [[SCBallView alloc] initWithFrame:frame4];
+    self.ball5View = [[SCBallView alloc] initWithFrame:frame5];
+    self.megaballView = [[SCBallView alloc] initWithFrame:frame6];
+    self.megaballView.isMegaball = YES;
+ 
+    [self.view addSubview:self.ball1View];
+    [self.view addSubview:self.ball2View];
+    [self.view addSubview:self.ball3View];
+    [self.view addSubview:self.ball4View];
+    [self.view addSubview:self.ball5View];
+    [self.view addSubview:self.megaballView];
+      
     
 }
 
 - (void)viewDidUnload
 {
-    [self setBall1Label:nil];
-    [self setBall2Label:nil];
-    [self setBall3Label:nil];
-    [self setBall4Label:nil];
-    [self setBall5Label:nil];
-    [self setMegaballLabel:nil];
     [self setTitleLabel:nil];
-    [self setBall1ImageView:nil];
-    [self setBall2ImageView:nil];
-    [self setBall2ImageView:nil];
-    [self setBall4ImageView:nil];
-    [self setBall5ImageView:nil];
-    [self setMegaballImageView:nil];
     [self setDirectionLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -162,7 +165,11 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    if (interfaceOrientation ==  UIInterfaceOrientationPortraitUpsideDown || interfaceOrientation == UIInterfaceOrientationPortrait ) {
+        return NO;
+    } else {
+        return YES;
+    }
 }
 
 @end

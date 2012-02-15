@@ -9,26 +9,21 @@
 #import <UIKit/UIKit.h>
 
 @class SCLotteryEngine;
+@class SCBallView;
 
 @interface RJSViewController : UIViewController
 
 @property (nonatomic, strong) SCLotteryEngine *lottoEngine;
 @property BOOL isStartup;
 
-@property (weak, nonatomic) IBOutlet UILabel *ball1Label;
-@property (weak, nonatomic) IBOutlet UILabel *ball2Label;
-@property (weak, nonatomic) IBOutlet UILabel *ball3Label;
-@property (weak, nonatomic) IBOutlet UILabel *ball4Label;
-@property (weak, nonatomic) IBOutlet UILabel *ball5Label;
-@property (weak, nonatomic) IBOutlet UILabel *megaballLabel;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *directionLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *ball1ImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *ball2ImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *ball3ImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *ball4ImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *ball5ImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *megaballImageView;
+@property (strong, nonatomic) SCBallView *ball1View;
+@property (strong, nonatomic) SCBallView *ball2View;
+@property (strong, nonatomic) SCBallView *ball3View;
+@property (strong, nonatomic) SCBallView *ball4View;
+@property (strong, nonatomic) SCBallView *ball5View;
+@property (strong, nonatomic) SCBallView *megaballView;
 
 
 

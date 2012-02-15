@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
@@ -13,84 +13,6 @@
                         <rect key="frame" x="0.0" y="20" width="480" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="wball.png" id="TJt-cI-ea0">
-                                <rect key="frame" x="0.0" y="110" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="wball.png" id="jk7-Lc-j55">
-                                <rect key="frame" x="80" y="110" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="wball.png" id="h6b-SQ-SIN">
-                                <rect key="frame" x="160" y="110" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="wball.png" id="2Zo-hM-jI8">
-                                <rect key="frame" x="240" y="110" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="wball.png" id="7Fe-vP-2Gd">
-                                <rect key="frame" x="320" y="110" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="yball.png" id="NoP-sC-zm7">
-                                <rect key="frame" x="400" y="110" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="8lX-7f-zlj">
-                                <rect key="frame" x="19" y="130" width="42" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="25t-QR-Me8">
-                                <rect key="frame" x="179" y="130" width="42" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="Uv7-lu-Zro">
-                                <rect key="frame" x="99" y="130" width="42" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="euX-Xb-Pda">
-                                <rect key="frame" x="419" y="130" width="42" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="UIi-sB-4xT">
-                                <rect key="frame" x="259" y="130" width="42" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="ska-A3-Khc">
-                                <rect key="frame" x="339" y="130" width="42" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mega Millions Picker" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="ysC-r0-jCU">
                                 <rect key="frame" x="80" y="20" width="320" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -112,19 +34,7 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <connections>
-                        <outlet property="ball1ImageView" destination="TJt-cI-ea0" id="buF-Dr-kh5"/>
-                        <outlet property="ball1Label" destination="8lX-7f-zlj" id="G8F-lO-frM"/>
-                        <outlet property="ball2ImageView" destination="jk7-Lc-j55" id="LMX-7o-4hg"/>
-                        <outlet property="ball2Label" destination="Uv7-lu-Zro" id="5pv-uq-kqo"/>
-                        <outlet property="ball3ImageView" destination="h6b-SQ-SIN" id="vLc-bt-FzA"/>
-                        <outlet property="ball3Label" destination="25t-QR-Me8" id="IJ2-Mo-fFC"/>
-                        <outlet property="ball4ImageView" destination="2Zo-hM-jI8" id="dSb-Sn-7DL"/>
-                        <outlet property="ball4Label" destination="UIi-sB-4xT" id="3cV-Bl-BYH"/>
-                        <outlet property="ball5ImageView" destination="7Fe-vP-2Gd" id="oEw-1g-WbO"/>
-                        <outlet property="ball5Label" destination="ska-A3-Khc" id="uKt-K1-s56"/>
                         <outlet property="directionLabel" destination="gAc-kD-Atm" id="cWh-um-a8S"/>
-                        <outlet property="megaballImageView" destination="NoP-sC-zm7" id="aEs-hD-wN3"/>
-                        <outlet property="megaballLabel" destination="euX-Xb-Pda" id="fce-pt-pvK"/>
                         <outlet property="titleLabel" destination="ysC-r0-jCU" id="I1R-Jr-V6K"/>
                     </connections>
                 </viewController>
@@ -132,27 +42,11 @@
             <point key="canvasLocation" x="14" y="309"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="wball.png" width="80" height="80"/>
-        <image name="yball.png" width="80" height="80"/>
-    </resources>
     <classes>
         <class className="RJSViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RJSViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="ball1ImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ball1Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="ball2ImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ball2Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="ball3ImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ball3Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="ball4ImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ball4Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="ball5ImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ball5Label" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="directionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="megaballImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="megaballLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
